@@ -110,7 +110,6 @@ const Login = () => {
   return (
     <div className="h-full">
       <Header />
-      {/* <div className="mainBackground flex items-center justify-center h-full"> */}
       <div className=" absolute">
         <img
           className="h-screen object-cover w-screen"
