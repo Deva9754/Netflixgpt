@@ -113,7 +113,7 @@ const Login = () => {
       <div className=" absolute">
         <img
           className="h-screen object-cover w-screen"
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/b4c7f092-0488-48b7-854d-ca055a84fb4f/5b22968d-b94f-44ec-bea3-45dcf457f29e/IN-en-20231204-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+          src="https://thefatork.store/cdn/shop/articles/netflix.jpg?v=1669877376"
           alt="Background"
         ></img>
       </div>
@@ -155,7 +155,7 @@ const Login = () => {
           {isSignIN ? "Sign In" : "Sign Up"}{" "}
         </button>
 
-        <h1 className=" flex justify-end ">Need help?</h1>
+        <h1 className=" flex justify-end cursor-pointer ">Need help?</h1>
         <h1 className=" cursor-pointer p-3" onClick={toogleSignIn}>
           {isSignIN
             ? "New to Netflix? Sign Up Now"
