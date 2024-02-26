@@ -83,12 +83,12 @@ import { SUPPORTED_LANG } from "../utils/Constants";
       {user ? (
         <div className="flex p-2">
           <img
-           className="hidden md:inline-block w-12 h-12 rounded-lg "
+           className="hidden md:inline-block w-12 h-12 rounded-full "
             alt="loading"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SGvshARHJ5GYSH_Kig8-cYNw5rO3nWn7mA&usqp=CAU"
+            src="https://cdn1.vectorstock.com/i/1000x1000/31/95/user-sign-icon-person-symbol-human-avatar-vector-12693195.jpg"
             // className="w-12 h-12 rounded-3xl"
           />
-          <button onClick={handleSignOut} className=" font-bold text-white">
+          <button onClick={handleSignOut} className=" font-bold text-white pl-4">
             Sign Out{" "}
           </button>
         </div>
