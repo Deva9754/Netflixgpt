@@ -1,6 +1,11 @@
 const checkvalidation =(email,password,name)=>{
     
+
+    //eslint-disable-next-line
 const isemailvalid = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email);
+
+//eslint-disable-next-line
+
 const ispasswordvalid = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/.test(password);
 // const isNameValid = /([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+/.test(name);
 
