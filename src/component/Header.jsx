@@ -62,7 +62,7 @@ import { SUPPORTED_LANG } from "../utils/Constants";
         alt="Netflix logo"
       ></img>{
         user && (
-          <div className=" flex p-2 justify-items-end">
+          <div className=" flex pl-24 justify-items-end">
             {showGptSearch && (
                            <select
               className="p-2 m-2 bg-purple-300 text-white rounded-xl font-semibold"
@@ -88,7 +88,7 @@ import { SUPPORTED_LANG } from "../utils/Constants";
             src="https://cdn1.vectorstock.com/i/1000x1000/31/95/user-sign-icon-person-symbol-human-avatar-vector-12693195.jpg"
             // className="w-12 h-12 rounded-3xl"
           />
-          <button onClick={handleSignOut} className=" font-bold text-white pl-4">
+          <button onClick={handleSignOut} className=" font-bold text-white pl-32">
             Sign Out{" "}
           </button>
         </div>
