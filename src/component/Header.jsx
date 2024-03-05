@@ -2,7 +2,7 @@ import { signOut } from "firebase/auth";
 import { auth } from "../utils/Firebase";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
+import {  useEffect } from "react";
 import { addUser, removeUser } from "../utils/Userslice";
 import { onAuthStateChanged } from "firebase/auth";
 import { addGptMovieResult, toggleGptSearchView } from "../utils/GptSlice";
@@ -35,6 +35,7 @@ import { SUPPORTED_LANG } from "../utils/Constants";
     dispatch(addGptMovieResult({ movieResults: null, movieNames: null }));
   };
 
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -48,9 +49,10 @@ import { SUPPORTED_LANG } from "../utils/Constants";
         navigate("/");
         // ...
       }
-    });
-    return () => unsubscribe();
-  }, [dispatch,navigate]);
+    })
+    return ()=>unsubscribe();
+    // eslint-disable-next-line
+  }, []);
 
   return (
     <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
@@ -81,14 +83,14 @@ import { SUPPORTED_LANG } from "../utils/Constants";
         </div>)
       }
       {user ? (
-        <div className="flex p-2">
+        <div className="flex gap-2 items-center">
           <img
            className="hidden md:inline-block w-12 h-12 rounded-full "
             alt="loading"
             src="https://cdn1.vectorstock.com/i/1000x1000/31/95/user-sign-icon-person-symbol-human-avatar-vector-12693195.jpg"
             // className="w-12 h-12 rounded-3xl"
           />
-          <button onClick={handleSignOut} className=" font-bold text-white pl-32">
+          <button onClick={handleSignOut} className=" font-bold text-white">
             Sign Out{" "}
           </button>
         </div>
