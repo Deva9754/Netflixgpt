@@ -22,3 +22,6 @@ export const LOGO =
 
 export const OPEN_AI_KEY =
   "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";
+
+export const OPEN_AI_KEY1 =
+  "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";
