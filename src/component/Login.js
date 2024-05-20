@@ -98,6 +98,10 @@ const Login = () => {
           console.log(errorCode + "--" + errorMessage);
         });
     }
+
+    // console.log(message);
+    // console.log(email.current.value);
+    // console.log(password.current.value);
   };
 
   const toogleSignIn = () => {
@@ -109,7 +113,7 @@ const Login = () => {
       <div className=" absolute">
         <img
           className="h-screen object-cover w-screen"
-          src="https://cdn-images-1.medium.com/max/1024/1*5lyavS59mazOFnb55Z6znQ.png"
+          src="https://thefatork.store/cdn/shop/articles/netflix.jpg?v=1669877376"
           alt="Background"
         ></img>
       </div>
