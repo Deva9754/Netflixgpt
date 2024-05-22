@@ -21,6 +21,7 @@ const GptSearchBar = () => {
     const json = await data.json();
     return json.results;
   };
+
   const handleGPTsearch = async () => {
     // console.log(searchText.current.value);
     //Make an API Call to GPT
@@ -37,15 +38,15 @@ const GptSearchBar = () => {
     // console.log(chatCompletion.choices);
     const gptMovies = chatCompletion.choices?.[0]?.message?.content.split(",");
 
-      //for each movie need to search TMDB api
+    //for each movie need to search TMDB api
 
-      const promiseArray = gptMovies.map((movie) => searchMovieTMDB(movie));
-      const tmdbResult = await Promise.all(promiseArray);
-      // console.log(tmdbResult);
-  
-      dispatch(
-        addGptMovieResult({ movieResults: tmdbResult, movieNames: gptMovies })
-      );
+    const promiseArray = gptMovies.map((movie) => searchMovieTMDB(movie));
+    const tmdbResult = await Promise.all(promiseArray);
+    // console.log(tmdbResult);
+
+    dispatch(
+      addGptMovieResult({ movieResults: tmdbResult, movieNames: gptMovies })
+    );
   };
   return (
     <div className="pt-[45%] md:pt-[10%] flex justify-center">
