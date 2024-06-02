@@ -57,9 +57,9 @@ const Header = () => {
     <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
       <img
         className="mx-auto md:mx-0  object-fill opacity-80 rounded-xl cursor-pointer "
-        height={60}
-        width={110}
-        src="https://s3.amazonaws.com/logos-brandpa-com/uploads/watchita-logo-thumbnail.png"
+        height={49}
+        width={73}
+        src="https://play-lh.googleusercontent.com/5Y97X0kfd9uznAJXFOmLXEjqNTjJNZ07nKOmPvPbFUoUKkBswIYGIzMOzcYnF9bMdw"
         alt="Netflix logo"
       ></img>
       {user && (
