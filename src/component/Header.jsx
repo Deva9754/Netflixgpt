@@ -60,7 +60,7 @@ const Header = () => {
         height={49}
         width={73}
         src="https://play-lh.googleusercontent.com/5Y97X0kfd9uznAJXFOmLXEjqNTjJNZ07nKOmPvPbFUoUKkBswIYGIzMOzcYnF9bMdw"
-        alt="Netflix logo"
+        alt="App logo"
       ></img>
       {user && (
         <div className=" flex pl-24 justify-items-end">
