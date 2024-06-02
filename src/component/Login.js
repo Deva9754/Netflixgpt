@@ -98,10 +98,6 @@ const Login = () => {
           console.log(errorCode + "--" + errorMessage);
         });
     }
-
-    // console.log(message);
-    // console.log(email.current.value);
-    // console.log(password.current.value);
   };
 
   const toogleSignIn = () => {
@@ -113,14 +109,14 @@ const Login = () => {
       <div className=" absolute">
         <img
           className="h-screen object-cover w-screen"
-          src="https://thefatork.store/cdn/shop/articles/netflix.jpg?v=1669877376"
+          src="https://cdn.dribbble.com/userupload/4177282/file/original-5974993ec6da43d3f7032c6251756cc3.png?resize=1200x900"
           alt="Background"
         ></img>
       </div>
 
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="text-white w-full md:w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 opacity-80"
+        className="text-white w-full md:w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 opacity-80 rounded-lg"
       >
         <h1 className=" font-bold text-3xl py-4">
           {isSignIN ? "Sign In" : "Sign Up"}
@@ -136,7 +132,7 @@ const Login = () => {
 
         <input
           ref={email}
-          type="text"
+          type="email"
           placeholder="Enter Your Email"
           className="p-2 my-4 rounded-lg w-full bg-gray-700"
         ></input>
@@ -149,7 +145,7 @@ const Login = () => {
         <p className=" text-lg font-bold text-white-600">{errorMessage}</p>
 
         <button
-          className="p-2 my-6 rounded-lg bg-red-700 w-full"
+          className="p-2 my-6 rounded-lg bg-[#0f79af] w-full font-bold"
           onClick={handleButtonChage}
         >
           {isSignIN ? "Sign In" : "Sign Up"}{" "}
@@ -157,9 +153,7 @@ const Login = () => {
 
         <h1 className=" flex justify-end cursor-pointer ">Need help?</h1>
         <h1 className=" cursor-pointer p-3" onClick={toogleSignIn}>
-          {isSignIN
-            ? "New to Netflix? Sign Up Now"
-            : "Already a User Login Now"}
+          {isSignIN ? "New to App? Sign Up Now" : "Already a User Login Now"}
         </h1>
       </form>
     </div>
